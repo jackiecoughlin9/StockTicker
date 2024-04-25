@@ -2,6 +2,7 @@ var http = require('http');
 var url = require('url'); 
 const MongoClient =  require('mongodb').MongoClient;
 const port = process.env.PORT || 8080; 
+console.log("Here"); 
 
 http.createServer(function (req, res) {
   
