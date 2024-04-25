@@ -2,13 +2,13 @@ var http = require('http');
 var url = require('url'); 
 const MongoClient =  require('mongodb').MongoClient;
 const port = process.env.PORT || 8080; 
-console.log("Here"); 
 
 http.createServer(function (req, res) {
   
     res.writeHead(200, {'Content-Type': 'text/html'});
     var queryObject = url.parse(req.url, true).query; 
     var pathName = url.parse(req.url, true).pathname;  
+    console.log("Nice"); 
 
     if (pathName == "/") {
       html = "<form method='GET' action='/process'>" +
@@ -26,7 +26,6 @@ http.createServer(function (req, res) {
     var stock = queryObject.stock;
     if (queryObject.radio == "symbol") {
         query = { "tickerSymbol": `${stock}`};
-        console.log("Here"); 
     } 
     if (queryObject.radio == "name"){
       query = { "name": `${stock}`}; 
