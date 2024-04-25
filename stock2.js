@@ -45,6 +45,7 @@ http.createServer(function (req, res) {
         if ((await collection.countDocuments(query)) == 0) {
             console.log("Stock not found");
         }
+        console.log("Alrighty"); 
 
 //         // Print document info
 //         // for await (const doc of results) {
