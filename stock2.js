@@ -30,11 +30,11 @@ http.createServer(function (req, res) {
       query = { "name": `${stock}`}; 
     }
 
-//   //connect to mongo
-//   const connStr = "mongodb+srv://jackiecoughlin99:Jackiec18@cluster0.mlvh003.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-//   MongoClient.connect(connStr, async function(err, db) {   
-//     if (err) { console.log(err); }
-//     else {
+  //connect to mongo
+  const connStr = "mongodb+srv://jackiecoughlin99:Jackiec18@cluster0.mlvh003.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  MongoClient.connect(connStr, async function(err, db) {   
+    if (err) { console.log(err); }
+    else {
 //         // Select db and collection
 //         var db_object = db.db("Stock");
 //         var collection = db_object.collection('PublicCompanies');
@@ -54,8 +54,8 @@ http.createServer(function (req, res) {
 //         // }
 // //         // Close database
 // //         await db.close();
-//     } // end else
-// }) // end client.connect
+    } // end else
+}) // end client.connect
 
 
   res.end();
