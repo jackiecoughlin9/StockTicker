@@ -35,9 +35,9 @@ http.createServer(function (req, res) {
   MongoClient.connect(connStr, async function(err, db) {   
     if (err) { console.log(err); }
     else {
-    //     // Select db and collection
-    //     var db_object = db.db("Stock");
-    //     var collection = db_object.collection('PublicCompanies');
+        // Select db and collection
+        var db_object = db.db("Stock");
+        var collection = db_object.collection('PublicCompanies');
         // Find matching documents
         // const results = collection.find(query);
 
