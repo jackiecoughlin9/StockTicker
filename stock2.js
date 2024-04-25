@@ -39,6 +39,8 @@ http.createServer(function (req, res) {
         var db_object = db.db("Stock");
         var collection = db_object.collection('PublicCompanies');
         // Find matching documents
+        console.log("Query: " + query); 
+
         const results = collection.find(query);
 
         // Print a message if no documents were found
