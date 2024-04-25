@@ -47,11 +47,11 @@ http.createServer(function (req, res) {
         }
 
         // Print document info
-        for await (const doc of results) {
-            console.dir("Name: " + doc.name);
-            console.dir("Symbol: " + doc.symbol);
-            console.dir("Price: " + doc.price);
-        }
+        // for await (const doc of results) {
+        //     console.dir("Name: " + doc.name);
+        //     console.dir("Symbol: " + doc.symbol);
+        //     console.dir("Price: " + doc.price);
+        // }
         // Close database
         await db.close();
     } // end else
