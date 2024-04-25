@@ -25,11 +25,10 @@ http.createServer(function (req, res) {
     var stock = queryObject.stock;
     if (queryObject.radio == "symbol") {
         query = { "tickerSymbol": `${stock}`};
-        //read data 
+        console.log("Here"); 
     } 
     if (queryObject.radio == "name"){
       query = { "name": `${stock}`}; 
-       //read data 
     }
 
 
