@@ -41,10 +41,10 @@ http.createServer(function (req, res) {
         // Find matching documents
         const results = collection.find(query);
 
-        // Print a message if no documents were found
-        if ((await collection.countDocuments(query)) === 0) {
-            console.log("Stock not found");
-        }
+        // // Print a message if no documents were found
+        // if ((await collection.countDocuments(query)) == 0) {
+        //     console.log("Stock not found");
+        // }
 
         // Print document info
         // for await (const doc of results) {
