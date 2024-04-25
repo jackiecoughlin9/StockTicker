@@ -24,7 +24,7 @@ http.createServer(function (req, res) {
   else if (pathName == "/process")
     var stock = queryObject.stock;
     if (queryObject.radio == "symbol") {
-        query = { "tickerSymbol": `${stock}`};
+        query = { "symbol": `${stock}`};
     } 
     if (queryObject.radio == "name"){
       query = { "name": `${stock}`}; 
