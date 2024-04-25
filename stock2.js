@@ -1,7 +1,7 @@
 var http = require('http');
 var url = require('url'); 
 const MongoClient =  require('mongodb').MongoClient;
-// const port = process.env.PORT || 8080; 
+const port = process.env.PORT || 8080; 
 
 http.createServer(function (req, res) {
   
@@ -35,4 +35,4 @@ http.createServer(function (req, res) {
 
   res.end();
   
-}).listen(8080);
+}).listen(port);
