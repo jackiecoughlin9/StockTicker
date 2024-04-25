@@ -39,12 +39,12 @@ http.createServer(function (req, res) {
         var db_object = db.db("Stock");
         var collection = db_object.collection('PublicCompanies');
         // Find matching documents
-        const results = collection.find(query);
+        // const results = collection.find(query);
 
-        // Print a message if no documents were found
-        if ((await collection.countDocuments(query)) === 0) {
-            console.log("Stock not found");
-        }
+        // // Print a message if no documents were found
+        // if ((await collection.countDocuments(query)) === 0) {
+        //     console.log("Stock not found");
+        // }
 
 //         // Print document info
 //         for await (const doc of results) {
@@ -54,7 +54,7 @@ http.createServer(function (req, res) {
 //         }
 //         // Close database
 //         await db.close();
-//     } // end else
+    } // end else
 // }) // end client.connect
 
 
